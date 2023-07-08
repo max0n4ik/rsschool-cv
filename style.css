@@ -10,7 +10,6 @@ body{
     width: 100%;
     max-width: 1480px;
     margin: 0 auto;
-    text-align: center;
 }
 header nav ul li:first-child{
     margin-left: 0;
