@@ -1,48 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="/assets/Person.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="style.css">
-    <title>CV</title>
-</head>
-<body>
-    <header>
-        <h1>My CV</h1>
-        <nav>
-            <ul>
-                <li><a href="#About"></a>About</li>
-                <li><a href="#Contact"></a>Contact</li>
-                <li><a href="#Skills"></a>Skills</li>
-                <li><a href="#Code"></a>Code</li>
-                <li><a href="#Projects"></a>Projects</li>
-                <li><a href="#Languages"></a>Languages</li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="left"> 
-            <section class="m contact"> 
-                <img src="/assets/Photo.jpg" alt="My Photo">
-                <h2>Contact Information</h2>
-                <ul>
-                    <li>Phone: +79877446653</li>
-                    <li>E-mail: max2004.gorohov@yandex.ru</li>
-                    <li>Location: Nizhniy Novgorod</li>
-                    <li>Telegram: @vanguardd</li>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="shortcut icon"
+            href="assets/Person.ico"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>CV</title>
+    </head>
+    <body>
+        <header>
+            <h1>My CV</h1>
+            <nav>
+                <ul class="nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#code">Code</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#languages">Languages</a></li>
                 </ul>
-            </section>
-        </div>
-        <div class="right">
-            <section class="m about">
-                <h2>Briefly About Myself</h2>
-                <p>I am a determined programmer with a diligent and persistent character. I am not afraid to take on challenges, even if they involve new technologies or obstacles.
-                    I am also willing to work in a team and always open to new companies and opportunities. I strive for development and constantly improve my skills to achieve big goals.</p>
-            </section>
-        </div>
-    </main>
-</body>
+            </nav>
+        </header>
+        <main>
+            <div class="left">
+                <section id="contact" class="m contact">
+                    <img src="assets/Photo.jpg" alt="My Photo" />
+                    <h2>Contact Information</h2>
+                    <ul>
+                        <li>Phone: +79877446653</li>
+                        <li>E-mail: max2004.gorohov@yandex.ru</li>
+                        <li>Location: Nizhniy Novgorod</li>
+                        <li>Telegram: @vanguardd</li>
+                    </ul>
+                </section>
+                <section id="languages" class="languages">
+                    <h2>Languages</h2>
+                    <p>
+                        English (Somewhere between B1 Intermediate and B2 Upper
+                        Intermediate) <br />Russian (Native)
+                    </p>
+                </section>
+            </div>
+            <div class="right">
+                <section id="about" class="m about">
+                    <h2>Briefly About Myself</h2>
+                    <p>
+                        I am a determined programmer with a diligent and
+                        persistent character. I am not afraid to take on
+                        challenges, even if they involve new technologies or
+                        obstacles. I am also willing to work in a team and
+                        always open to new companies and opportunities. I strive
+                        for development and constantly improve my skills to
+                        achieve big goals.
+                    </p>
+                </section>
+                <section id="skills" class="m skills">
+                    <h2>Skills and Proficiency</h2>
+                    <ul class="skills_list">
+                        <li>HTML, CSS, JS</li>
+                        <li>SCSS (Sass), Bootstrap</li>
+                        <li>Figma, Adobe Photoshop, Midjourney</li>
+                        <li>TypeSript, JSON, XML</li>
+                    </ul>
+                </section>
+                <section id="code" class="m code">
+                    <h2>Code Example</h2>
+                    <pre><code>
+function&nbsp;eachCons(array,&nbsp;n)&nbsp;{
+	let&nbsp;r&nbsp;=&nbsp;[];
+&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(let&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;=&nbsp;array.length&nbsp;&#45;&nbsp;n;&nbsp;i++)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const&nbsp;chunk&nbsp;=&nbsp;array.slice(i,&nbsp;i&nbsp;+&nbsp;n);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;r.push(chunk);
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;r;
+}</code></pre>
+                </section>
+                <section class="m" id="projects">
+                    <h2>My Projects</h2>
+                    <div class="projects">
+                        <div>
+                            <h3>My Cv markdown</h3>
+                            <img
+                                src="assets/Projects-2.png"
+                                alt="My Cv markdown"
+                            />
+                        </div>
+                        <div>
+                            <h3>My Cv Site</h3>
+                            <img src="assets/Projects-1.png" alt="My Cv Site" />
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <a
+                class="git"
+                target="_blank"
+                href="https://github.com/max0n4ik"
+            ></a>
+            <p>2023</p>
+            <a target="_blank" href="https://rs.school/js/">
+                <img
+                    src="assets/rs_school.svg"
+                    alt="RS School logo"
+                    class="footer_img"
+                />
+            </a>
+        </footer>
+    </body>
 </html>
