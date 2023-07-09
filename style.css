@@ -112,10 +112,18 @@ code {
         scroll-behavior: smooth;
     }
 }
-.projects img {
+.img {
     width: 350px;
     height: 170px;
-    aspect-ratio: auto 350/170;
+    aspect-ratio: 3/4;
+    margin: 10px;
+    box-shadow: 7px 7px 20px 1px gray;
+    margin-right: 12px;
+    object-fit: cover;
+}
+.pj_a {
+    text-decoration: none;
+    color: #000;
 }
 .projects {
     display: grid;
